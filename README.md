@@ -33,7 +33,7 @@ Now we need to update:
 sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.7 1
 ```
 the code means the following:
-update-alternatives --install is taking a <link> than the <name> , the <path> and at least the priority.
+update-alternatives --install is taking a **link** than the **name** , the **path** and at least the **priority**.
 
 check again what python version you get now with:
 ```
