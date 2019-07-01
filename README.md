@@ -22,45 +22,60 @@ sudo apt upgrade
 With sudo you get the full wrights - so please be careful by using it
 
 In the next step we check the python version:
-'python -V' (you although can use 'python --version')
+```
+python -V
+```
+(you although can use 'python --version')
 Probably it shows something like "python 2.4.x"
 Now we need to update:
 
-'sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.7 1'
+```
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.7 1
+```
 the code means the following:
 update-alternatives --install is taking a <link> than the <name> , the <path> and at least the priority.
 
 check again what python version you get now with:
-'python -V'
+```
+python -V
+```
 
 If you want to configure the version you can take a closer look at:
-'update-alternatives --config python'
+```
+update-alternatives --config python
+```
 
 # Install pip
 
 With installing pip there are very often a lot of problems ... don't ask me why!
 If you just installed pip you need to start with this lines of code:
 
-'python -m pip uninstall pip'
-'apt remove python-pip'
-'whereis pip' should should you something like this: "pip:  "
+```
+python -m pip uninstall pip
+apt remove python-pip
+whereis pip
+``` 
+should should you something like this: "pip:  "
 
 Now we are installing pip:
 
-'sudo wget https://bootstrap.pypa.io/get-pip.py -O /tmp/get-pip.py'
-'sudo python3 /tmp/get-pip.py'
-'sudo pip install --user pipenv'
-'sudo pip3 install --user pipenv'
-'echo "PATH=$HOME/.local/bin:$PATH" >> ~/.profile'
-'source ~/.profile'
-'whereis pip'
+```
+sudo wget https://bootstrap.pypa.io/get-pip.py -O /tmp/get-pip.py
+sudo python3 /tmp/get-pip.py
+sudo pip install --user pipenv
+sudo pip3 install --user pipenv
+echo "PATH=$HOME/.local/bin:$PATH" >> ~/.profile
+source ~/.profile
+whereis pip
+```
 
 # Installing a kernel to be able to execute python code inside Atom
 
 If pip is installed correct then the following two lines should not be a big problem:
-'sudo python -m pip install ipykernel'
-'sudo python -m ipykernel install --user'
-
+```
+sudo python -m pip install ipykernel
+sudo python -m ipykernel install --user
+```
 And that's it!!
 Only two little steps before we can start coding in Atom!
 
@@ -78,9 +93,9 @@ When bot packages are installed - close Atom and restart it!
 Create a new file and let's try our achievements
 
 For example, type:
-
-'print("Hello World")'
-
+```
+print("Hello World")
+```
 Save it as name.py file (name stands for any name for the file you want to ;) )
 
 # Run the Code
