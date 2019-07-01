@@ -2,9 +2,9 @@
 A little repository which is catching up my way to a beautiful ide and getting started with coding python
 
 # IDE := integrated development environment
-My favorite ide is 
-## ATOM
-for my private projects. At work i am using pycharm!
+My favorite ide , which i am using for all my private projects, is:
+##### ATOM
+At work i am using pycharm!
 
 So lets get started :)
 Go to http://www.atom.io or to you ubuntu store and download atom.
@@ -14,8 +14,8 @@ Open your terminal and follow this section:
 # Install Python
 
 At first update your apt:
-'sudo apt update'
-'sudo apt upgrade'
+'''sudo apt update'
+'sudo apt upgrade'''
 
 With sudo you get the full wrights - so please be careful by using it
 
