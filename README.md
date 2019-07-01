@@ -14,8 +14,10 @@ Open your terminal and follow this section:
 # Install Python
 
 At first update your apt:
-'''sudo apt update'
-'sudo apt upgrade'''
+```
+sudo apt update
+sudo apt upgrade
+```
 
 With sudo you get the full wrights - so please be careful by using it
 
